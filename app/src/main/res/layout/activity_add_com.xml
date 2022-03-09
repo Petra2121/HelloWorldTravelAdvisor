@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context=".AddCom">
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/addImageCom"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_camera_black"
+        app:c_border="true"
+        app:c_border_width="2dp"
+        app:c_border_color="@color/colorAccent"
+        />
+
+    <EditText
+        android:id="@+id/editPlaceName"
+        android:background="@drawable/shapecom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginStart="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Place Name"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/addImageCom"
+        />
+
+    <EditText
+        android:id="@+id/editAddress"
+        android:background="@drawable/shapecom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginStart="50dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:layout_below="@id/editPlaceName"
+        android:hint="Address"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/editType"
+        android:background="@drawable/shapecom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginStart="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@id/editAddress"
+        android:hint="Local or Foreign"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:background="@drawable/shapecom"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:padding="8dp"
+        android:layout_marginStart="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@id/editType"
+        android:hint="I recommend this place because... "
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btnSaveCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_rectangle"
+        />
+
+    <Button
+        android:id="@+id/btnCancelCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="close"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_rectangle"
+        />
+
+</RelativeLayout>
